@@ -1,9 +1,5 @@
 from __future__ import division
 from __future__ import absolute_import
-from builtins import hex
-from builtins import chr
-from builtins import str
-from past.utils import old_div
 from .adbase import *
 
 def convert_error_code(error_code):

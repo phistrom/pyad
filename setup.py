@@ -2,28 +2,30 @@ import os
 import os.path
 from setuptools import setup
 
+
 def read(fname):
     if os.path.exists(fname):
-    	return open(os.path.join(os.path.dirname(__file__), fname)).read()
+        return open(os.path.join(os.path.dirname(__file__), fname)).read()
     else:
         return ''
 
+
 setup(
-    name = "pyad",
-    version = "0.5.15",
-    author = "Zakir Durumeric",
-    author_email = "zakird@gmail.com",
-    maintainer = "Zakir Durumeric",
-    maintainer_email = "zakird@gmail.com",
-    download_url = "https://github.com/zakird/pyad/",
-    url = "https://zakird.com/pyad",
-    description = "An Object-Oriented Active Directory management framework built on ADSI",
-    license = "Apache License, Version 2.0",
-    keywords = "python microsoft windows active directory AD adsi",
+    name="pyad",
+    version="0.6.0",
+    author="Zakir Durumeric",
+    author_email="zakird@gmail.com",
+    maintainer="Phillip Stromberg",
+    maintainer_email="phillip@4stromberg.com",
+    download_url="https://github.com/phistrom/pyad",
+    url="https://zakird.com/pyad",
+    description="An Object-Oriented Active Directory management framework built on ADSI",
+    license="Apache License, Version 2.0",
+    keywords="python microsoft windows active directory AD adsi",
     packages=[
         'pyad'
     ],
-    long_description = read('README.rst'),
+    long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: Apache Software License",
@@ -34,6 +36,5 @@ setup(
     ],
     install_requires=[
         'setuptools',
-        'future'
     ]
 )
